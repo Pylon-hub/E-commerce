@@ -1,0 +1,10 @@
+<?php 
+$host = "localhost";  // Host name  
+$username = "username";  // Mysql username  
+$password = "password"; // Mysql password  
+$db_name = "database_name"; // Database name  
+
+// Connect to server and select database.  
+$conn = mysqli_connect("$host", "$username", "$password")or die("cannot connect");  
+mysqli_select_db($conn, "$db_name")or die("cannot select DB");  
+?>
